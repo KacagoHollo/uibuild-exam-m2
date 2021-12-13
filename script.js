@@ -36,7 +36,7 @@ const rpgForm = `
         ${inputEl("text", "name", "Tárgy")}
         ${textAreas("text", "comment", "Megjegyzés")}
         ${textAreaCb("checkbox", "terms", "Elolvastam és elfogadom az ", "Adatkezelési Tájékoztatót.")}
-        <button>Mentés</button>
+        <button>MENTÉS</button>
     </form>
     `;
 
