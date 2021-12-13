@@ -1,0 +1,116 @@
+/* font-family: 'EB Garamond', serif;
+font-family: 'Montserrat', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+  display: block;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a img {
+  border: none;
+}
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+textarea {
+  resize: none;
+}
+
+/* end of css reset */
+body {
+  background-color: #f7e4d4;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 48px;
+  font-family: "EB Garamond", serif;
+  color: #467745;
+}
+
+input[name="name"] {
+  height: 64px;
+  max-width: 480px;
+  width: 480px;
+  padding-left: 20px;
+}
+input[name="comment"] {
+  height: 120px;
+  max-width: 480px;
+  width: 480px;
+  padding-left: 20px;
+}
+input[name="terms"] {
+}
+
+input[type="text"]::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #467745;
+}
+
+input {
+  margin-top: 30px;
+  display: flex;
+}
+label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #467745;
+}
+
+button {
+  font-family: "EB Garamond", serif;
+  font-size: 21px;
+
+  max-width: 280px;
+  width: 280px;
+  height: 80px;
+
+  background-color: #467745;
+  color: #f7e4d4;
+  letter-spacing: 0.2em;
+  border-radius: 40px;
+
+  margin-top: 30px;
+}
+div#root {
+  width: 100%;
+  height: 100%;
+}
+
+form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 520px) {
+  h1 {
+    font-size: 36px;
+    text-align: left;
+  }
+  input[type="text"] {
+    width: calc(100% - 40px);
+  }
+}
